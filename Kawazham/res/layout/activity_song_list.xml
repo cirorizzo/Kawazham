@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.kawazham.SongList"
+    tools:ignore="MergeRootFrame" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <WebView
+        android:id="@+id/webVwSongDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:context="com.android.kawazham.SongItemFragment" />
+</FrameLayout>

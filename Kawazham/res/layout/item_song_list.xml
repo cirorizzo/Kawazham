@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/song_list"
+    android:name="com.android.kawazham.SongList"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+	<ImageView
+	    android:id="@+id/flag"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.8"
+	    android:contentDescription="@string/none"
+	    android:paddingTop="5dp"
+	    android:src="@drawable/feed_icon_28x28" />
+
+	<LinearLayout
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="3"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/txtVwTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/songTitle"
+	        android:textAppearance="@style/itemListItem01" />
+
+	    <TextView
+	        android:id="@+id/txtVwArtist"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/songArtist" />
+	</LinearLayout>
+
+	<TextView
+	    android:id="@+id/txtVwPublishedDate"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:text="@string/no_data"
+	    android:textAppearance="@style/itemListItem03" />
+
+</LinearLayout>
